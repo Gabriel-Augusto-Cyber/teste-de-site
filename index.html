@@ -1,21 +1,309 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Gabriel Augusto - estudante de Ciência da Computação e desenvolvedor em formação.">
+    <title>Gabriel Augusto | Portfólio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class='menu'>
-          <ul>
-            <li><a href="#">sobre</a></li>
-            <li><a href="#">portifolio</a></li>
-            <li><a href="#">contato</a></li>
-          </ul>
-        </nav>
-        <h1 class="site-title">Gabriel Augusto</h1>
-        <h2 class="site-subtitle">Web site</h2>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#inicio" class="logo">Gabriel<span>.</span></a>
+
+            <nav class="menu" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="eyebrow">Olá, eu sou</p>
+                    <h1>Gabriel Augusto</h1>
+                    <h2>Estudante de Ciência da Computação</h2>
+
+                    <p class="hero-description">
+                        Desenvolvo projetos focados em automação, aplicações web e soluções
+                        que transformam tarefas do dia a dia em processos mais simples e eficientes.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+                        <a href="#contato" class="btn btn-secondary">Entrar em contato</a>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <div class="code-window">
+                        <div class="window-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code><span class="code-purple">const</span> developer = {
+  nome: <span class="code-green">"Gabriel Augusto"</span>,
+  curso: <span class="code-green">"Ciência da Computação"</span>,
+  foco: [
+    <span class="code-green">"Python"</span>,
+    <span class="code-green">"Web"</span>,
+    <span class="code-green">"Automação"</span>
+  ],
+  aprendendo: <span class="code-purple">true</span>
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="sobre">
+            <div class="container">
+                <p class="section-label">Sobre mim</p>
+                <h2 class="section-title">Construindo soluções através da tecnologia.</h2>
+
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            Sou estudante de Ciência da Computação e tenho interesse em desenvolvimento
+                            de software, automação e criação de sistemas capazes de resolver problemas reais.
+                        </p>
+
+                        <p>
+                            Gosto de aprender criando. Por isso, meus projetos envolvem desde páginas web
+                            até ferramentas em Python para automatizar documentos, planilhas e rotinas.
+                        </p>
+
+                        <p>
+                            Este portfólio reúne alguns dos projetos que representam minha evolução
+                            como desenvolvedor.
+                        </p>
+                    </div>
+
+                    <div class="about-stats">
+                        <article>
+                            <strong>Web</strong>
+                            <span>HTML, CSS e JavaScript</span>
+                        </article>
+
+                        <article>
+                            <strong>Python</strong>
+                            <span>Automação e ferramentas</span>
+                        </article>
+
+                        <article>
+                            <strong>SQL</strong>
+                            <span>Banco de dados</span>
+                        </article>
+
+                        <article>
+                            <strong>Git</strong>
+                            <span>Versionamento de código</span>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="habilidades">
+            <div class="container">
+                <p class="section-label">Tecnologias</p>
+                <h2 class="section-title">Habilidades que estou desenvolvendo.</h2>
+
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <div class="skill-icon">&lt;/&gt;</div>
+                        <h3>Front-end</h3>
+                        <p>Criação de interfaces responsivas, organizadas e acessíveis.</p>
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">{ }</div>
+                        <h3>Python</h3>
+                        <p>Scripts, automações e processamento de arquivos e dados.</p>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Automação</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">DB</div>
+                        <h3>Back-end e dados</h3>
+                        <p>Estruturação de aplicações e integração com bancos de dados.</p>
+                        <div class="tags">
+                            <span>Node.js</span>
+                            <span>SQL</span>
+                            <span>APIs</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">Git</div>
+                        <h3>Ferramentas</h3>
+                        <p>Controle de versão e organização do fluxo de desenvolvimento.</p>
+                        <div class="tags">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>VS Code</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projetos">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="section-label">Portfólio</p>
+                        <h2 class="section-title">Alguns dos meus projetos.</h2>
+                    </div>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-number">01</div>
+                        <div class="project-content">
+                            <p class="project-type">Sistema Web</p>
+                            <h3>Sistema de Gerenciamento</h3>
+                            <p>
+                                Aplicação web desenvolvida para organizar informações e facilitar
+                                o gerenciamento de dados através de uma interface simples.
+                            </p>
+
+                            <div class="tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Node.js</span>
+                                <span>SQL</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="#" aria-label="Abrir projeto Sistema de Gerenciamento">
+                                    Ver projeto →
+                                </a>
+                                <a href="#" aria-label="Abrir código do Sistema de Gerenciamento">
+                                    Código →
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-number">02</div>
+                        <div class="project-content">
+                            <p class="project-type">Automação</p>
+                            <h3>Gerador de Documentos</h3>
+                            <p>
+                                Ferramenta em Python criada para preencher e gerar documentos
+                                automaticamente a partir de dados armazenados em planilhas.
+                            </p>
+
+                            <div class="tags">
+                                <span>Python</span>
+                                <span>Excel</span>
+                                <span>DOCX</span>
+                                <span>ODT</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="#" aria-label="Abrir projeto Gerador de Documentos">
+                                    Ver projeto →
+                                </a>
+                                <a href="#" aria-label="Abrir código do Gerador de Documentos">
+                                    Código →
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-number">03</div>
+                        <div class="project-content">
+                            <p class="project-type">Python</p>
+                            <h3>Processamento de PDFs</h3>
+                            <p>
+                                Projeto para extrair, organizar e separar informações de documentos
+                                PDF, gerando arquivos individuais a partir dos dados encontrados.
+                            </p>
+
+                            <div class="tags">
+                                <span>Python</span>
+                                <span>PDF</span>
+                                <span>Automação</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="#" aria-label="Abrir projeto Processamento de PDFs">
+                                    Ver projeto →
+                                </a>
+                                <a href="#" aria-label="Abrir código do Processamento de PDFs">
+                                    Código →
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="projects-note">
+                    Substitua os links <strong>#</strong> pelos endereços dos seus projetos e repositórios no GitHub.
+                </p>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="contato">
+            <div class="container contact-container">
+                <div>
+                    <p class="section-label">Contato</p>
+                    <h2 class="section-title">Vamos conversar?</h2>
+
+                    <p class="contact-description">
+                        Estou sempre aberto a aprender, trocar experiências e participar de novos projetos.
+                    </p>
+                </div>
+
+                <div class="contact-links">
+                    <a href="mailto:seuemail@exemplo.com">
+                        <span>E-mail</span>
+                        <strong>seuemail@exemplo.com</strong>
+                    </a>
+
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <span>GitHub</span>
+                        <strong>github.com/seuusuario</strong>
+                    </a>
+
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <span>LinkedIn</span>
+                        <strong>linkedin.com/in/seuusuario</strong>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 Gabriel Augusto.</p>
+            <p>Desenvolvido com HTML e CSS.</p>
+        </div>
+    </footer>
 </body>
 </html>
